@@ -14,6 +14,16 @@ header {
     background-color: rgb(191, 227, 241);
 }
 
+.de_ux {
+    display: flex;
+    align-items: center;
+    width: 20%; 
+    height: 5rem;
+    border: 1px ridge black;
+    justify-content: center;
+    background-color: rgb(191, 227, 241);
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -23,6 +33,12 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: rgb(191, 227, 241);
+}
+
+
+li {
+    list-style: none;
+
 }
 
 .header {
@@ -90,7 +106,7 @@ nav {
 
 .body_div {
     width: 100%;
-    height: 30rem;
+    max-height: 100%;
     display: flex;
     justify-content: space-between;
     
@@ -146,15 +162,87 @@ nav {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 390px) {
+    
     .header {
         display: block;
+        
 
     }
 
     .deux {
-        width: 70;
+        width: 90%;
+        height: 1.4rem;
+        margin-left: 1rem;
+        
     }
 
+    .de_ux {
+        display: flex;
+        width: 40%;
+        height: 1.8rem;
+        margin-left: 54%; 
+        margin-top: -1.95rem;
+        
+    }
+
+    nav {
+        display: flex;
+        width: 40%;
+        height: 1.7rem;
+        margin-left: 1rem;
+        margin-top: 0.8rem;
+        list-style: none;
+    }
+
+    .hero_gauche {
+        display: none;
+    }
+
+    .ad {
+        display: none;
+    }
+
+    .double {
+        justify-content: center
+    }
+    
+    .hero_droite {
+        width: 100%;
+        height: 1.4rem;
+    }
+    
+
+    .grand_2   {
+        display: block;
+    }
+
+    .body_div {
+        display: block;
+    }
+    
+    .body_gauche {
+        width: 100%;
+        height: 2.2rem;
+        margin-left: 3rem;
+        margin-top: 0.4rem;
+    }
+
+    .body_droite {
+        width: 100%;
+        height: 6rem;
+        margin-left: 3rem;
+        margin-top: 0.4rem;
+    }
+
+    .sidebar {
+        width: 90%;
+        height: 2rem;
+        margin-left: 1rem;
+        margin-top: 0.4rem;
+    }
 }
 
+    h2 {
+        margin-left: 1rem;
+    }
